@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://sweet-backend-1q7h51buw-shinats-projects.vercel.app";
 
 export const loginUser = async (form) => {
   const res = await fetch(`${BASE_URL}/api/auth/login`, {
