@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://sweet-backend-1q7h51buw-shinats-projects.vercel.app/api/sweets";
+const API_URL = "http://localhost:3000/api/sweets";
 
 export const getSweets = async () => {
   const token = localStorage.getItem("token");
