@@ -1,0 +1,84 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 10fr 2.5fr; /* left big, right small */
+  height: 100vh;
+}
+
+
+/* LEFT SWEETS */
+.sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1.4fr); /* ⭐ 3 cards per row */
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto; 
+}
+
+
+.sweet-card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.sweet-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sweet-card h3 {
+  margin: 10px 0 5px;
+}
+
+.sweet-card .stock {
+  font-size: 13px;
+  color: gray;
+}
+
+.sweet-card button {
+  margin-top: 8px;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  background: #ff8c00;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sweet-card button:disabled {
+  background: #ccc;
+}
+
+/* RIGHT BILLING */
+.billing {
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+
+.bill-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}

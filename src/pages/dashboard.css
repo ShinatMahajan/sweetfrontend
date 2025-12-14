@@ -1,0 +1,102 @@
+/* FULL SCREEN POS */
+.pos {
+  display: flex;
+  height: 100vh;
+  background: #f4f6f8;
+}
+
+/* LEFT SIDE PRODUCTS */
+.products {
+  flex: 3;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 cards per row */
+  gap: 24px;
+  overflow-y: auto;
+}
+
+/* PRODUCT CARD */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;          /* ✅ HEIGHT FIX */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin: 10px 0 4px;
+  font-size: 18px;
+}
+
+.card p {
+  color: #ff7a00;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* RIGHT SIDE BILLING */
+.billing {
+  flex: 1;
+  background: #1f2937;
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.billing h3 {
+  margin-bottom: 16px;
+}
+
+.bill-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.billing hr {
+  margin: 12px 0;
+  border: 1px solid #374151;
+}
+
+.billing h2 {
+  margin-top: auto;
+  margin-bottom: 16px;
+}
+
+/* PAY BUTTON */
+.pay {
+  background: #3b82f6;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pay:hover {
+  background: #2563eb;
+}
+.products-wrapper {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+
