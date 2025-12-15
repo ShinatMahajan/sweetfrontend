@@ -25,4 +25,4 @@ Open http://localhost:5173/ to view the app.
 
 ## 🔗 Backend
 
-This frontend connects to the Sweet Shop Backend API. Make sure the backend is running before testing.
+This frontend connects to the Sweet Shop Backend API. 
